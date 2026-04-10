@@ -1,0 +1,88 @@
+  body {
+            margin: 0;
+            font-family: Arial;
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 200px;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+        }
+
+        /* Main */
+        .main {
+            flex: 1;
+            padding: 20px;
+            background: #ecf0f1;
+        }
+
+        /* Form */
+        .form {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .form input {
+            margin: 5px;
+            padding: 8px;
+            width: 30%;
+        }
+
+        .form button {
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border: 2px solid #34495e;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        th {
+            background: #34495e;
+            color: white;
+        }
+
+        .pass {
+            background-color: #d4edda;
+            color: green;
+        }
+
+        .fail {
+            background-color: #f8d7da;
+            color: red;
+        }
+
+        button.delete {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+        }
+
+        @media(max-width: 600px) {
+            .form input {
+                width: 100%;
+            }
+        }
