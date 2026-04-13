@@ -25,9 +25,15 @@
     <!-- Form Section -->
     <section class="form-section">
      <div class="form">
+        <label for="name">Name:
             <input type="text" id="name" placeholder="Name" required pattern="[A-Za-z ]+" title="Name should contain only letters and spaces" oninput="this.value = this.value.replace(/[^A-Za-z ]/g, '')">
+            </label>
+            <label for="roll">Roll No:
             <input type="number" id="roll" placeholder="Roll No" required min="1" step="1">
+            </label>
+            <label for="marks">Marks:
             <input type="number" id="marks" placeholder="Marks" required min="1" max="100" step="1" title="Marks must be between 1 and 100">
+            </label>
             <button id="addBtn" type="button">Add student</button>
         </div>
     </section>
